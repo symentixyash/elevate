@@ -1,0 +1,791 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline: 1px solid green;  */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li a {
+    color: black;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #000000;;
+}
+
+p {
+    line-height: 1.4;
+    color: black;
+    font-size: 1.1em;
+    font-family: "Roboto";
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+ul li a {
+    color: #595959;
+    font-size: 16px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    margin: 0px 15px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-seciton {
+    margin: 30px 0px;
+    font-size: 13px;
+}
+
+header {
+    background-color: #fff;
+    padding: 25px 0px;
+}
+#menu-header-menu {
+    border-top: 1px solid #cacaca;
+    padding-top: 22px;
+    margin-top: 40px;
+
+position: relative;
+    z-index: 11111;
+}
+
+.navbar-brand {
+    padding-left: 6%;
+}
+
+.gray-bg {
+    background-color: #eeeeee;
+}
+/*back to top*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0;
+    z-index: 99999999;
+    width: 50px;
+    margin-right: 10px;
+    height: 48px;
+    animation: rotate 10.5s;
+    text-align: center;
+    line-height: 50px;
+    background: #252522;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    text-decoration: none;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    right: 0;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slick-dotted.slick-slider {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    background: #080808;
+    border-radius: 50%;
+    /* border: 1px solid green; */
+}
+.slide h1 {
+    font-size: 10rem;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slick-vertical .slick-slide {
+    background-color: #374a67;
+    border: none;
+}
+.slick-vertical .slick-slide:nth-of-type(even) {
+    background-color: #64718c;
+}
+
+.slick-dots {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(90deg);
+    width: auto;
+    bottom: auto;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: white;
+    font-size: 12px;
+}
+
+.navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#navbarMobile {
+    justify-content: flex-end;
+}
+
+.upper-button-secion {
+    text-align: right;
+    position: absolute;
+    z-index: 111;   
+}
+
+.brand-logo {
+    max-width: 80%;
+    margin: auto;
+}
+
+.brand-background-section {
+    background-color: #0000008f;
+    padding: 50px 0px;
+    border-top: 2px solid #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.homepage-seciton {
+    position: relative;
+    
+}
+
+.gift-card-button,
+.reservations-button {
+    font-size: 14px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #595959;
+}
+
+.slider-nav .slick-next {
+    background: #4d664d;
+    z-index: 111;
+    height: 50px;
+    width: 30px;
+    right: 0;
+}
+
+.slider-nav .slick-prev {
+    background: #4d664d;
+    z-index: 111;
+    height: 50px;
+    width: 30px;
+    left: 0;
+}
+
+.slider-nav .slick-prev:before {
+    content: "<";
+    font-family: 'roboto';
+    font-size: 30px;
+}
+
+.slider-nav .slick-next:before {
+    content: ">";
+    font-family: 'roboto';
+    font-size: 30px;
+}
+.slider-nav img {
+    border: 1px solid #fff;
+}
+.gallery-banner.slick-slide img {
+    width: 100%;
+}
+
+.rsvp-images img {
+    width: 100%;
+}
+.btn-seciont {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+}
+.rsvp-images {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.revp-section.gray-bg {
+    padding: 100px 0px;
+}
+
+.btn-seciont {
+    background: #00000073;
+}
+
+.rsvp-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding-left: 4%;
+}
+
+.rsvp-button {
+    background: #fff;
+
+    text-transform: uppercase;
+}
+.rsvp-button a {
+    color: #f60e06;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 0px 25px;
+}
+
+.icon-image img {
+    width: auto;
+}
+
+.location-thumb img {
+    width: 100%;
+}
+
+ .location-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    padding: 40px 0px;
+    color: #fff;
+    top: 110px;
+    display: none;
+   
+  transition: all .6s;
+    
+}
+
+
+
+.for-location-page .location-menu {
+    position: relative;
+   display:  block !important;
+    top: 0;
+   padding: 0px;
+}
+
+
+.location-menu-row {
+    padding-top: 66px;
+
+    padding-bottom: 30px;
+    padding-left: 6%;
+}
+
+
+.loc-content {
+    margin-bottom: 20px;
+    
+}
+
+
+.loc-content a {
+    
+    color: #fff;
+}
+
+.loc-content a:hover {
+/*     
+   text-decoration: underline;
+   padding-bottom: 10px;
+   text-underline-position: under; */
+/* 
+   border-bottom: 1px solid #fff;
+   transition: all .6s; */
+}
+
+
+
+.bg-green {
+    background: #4d664d;
+}
+
+
+.contact-right-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+
+    
+}
+.contact-right-section img {
+    width: 100%;
+}
+
+.location-menu:hover {
+    display: block !important;
+}
+
+.location-icon,
+.call-us-icon {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.location-icon img,
+.call-us-icon img {
+    margin-bottom: 10px;
+    transition: all .6s;
+    
+}
+
+.location-icon img:hover, .call-us-icon img:hover{
+    transform: scale(.9);
+    transition: all .6s;
+}
+
+
+
+
+
+.about-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.location-contact-left {
+    text-align: center;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.location-thumb {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.about-full-details {
+    margin: 100px 0px;
+}
+
+.about-left-timing p {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.btn::before,
+.btn ::after {
+    position: absolute;
+    content: "";
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+    min-width: 150px;
+    padding: 0px;
+    margin-right: 25px;
+    margin-top: 5%;
+}
+
+.btn a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 15px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+
+.location-slider {
+    margin: 50px 0px;
+}
+
+
+.location-slider .slick-next {
+    content: '' !important;
+    background-image: url(../img/lcaotion-right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+    height: 100%;
+    
+    display: flex;
+    right: -55px;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+    background-position: center;
+}
+
+.location-slider .slick-prev {
+    content: '' !important;
+    background-image: url(../img/location-left-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+    height: 100%;
+    
+    display: flex;
+    left: -55px;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+    background-position: center;
+}
+
+
+.sec-1-btn-1::before {
+    background-color: #373e37;
+    transition: 0.3s ease-out;
+}
+
+
+.sec-2-btn::before {
+    background-color: #4D664D;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+.sec-1-btn-1 a {
+    color: rgb(255, 255, 255);
+    border: 1px solid #373e37;
+    transition: 0.2s 0.1s;
+}
+
+.sec-2-btn a {
+    color: rgb(255, 255, 255);
+    border: 1px solid #4D664D;
+    transition: 0.2s 0.1s;
+}
+
+.sec-1-btn-1 a:hover , .sec-2-btn a:hover{
+ color: #333;
+}
+
+.btn.hover-filled-slide-left::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.btn.hover-filled-slide-left:hover::before {
+    width: 0%;
+}
+
+.reservations-button {
+    background: #4d664d;
+    padding: 12px 25px 12px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+.image-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-wrap img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.image-wrap img:hover {
+    animation: move 15s ease-out;
+    /* Add infinite to loop. */
+
+    -ms-animation: move 15s ease-out;
+    -webkit-animation: move 15s ease-out;
+    /* -0-animation: move 15s ease-out; */
+    -moz-animation: move 15s ease-out;
+    cursor: pointer;
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -o-transform-origin: bottom left;
+        transform-origin: bottom left;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        /* IE 9 */
+
+        -webkit-transform: scale(1);
+        /* Safari and Chrome */
+
+        -o-transform: scale(1);
+        /* Opera */
+
+        -moz-transform: scale(1);
+        /* Firefox */
+    }
+    100% {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        /* IE 9 */
+
+        -webkit-transform: scale(1.2);
+        /* Safari and Chrome */
+
+        -o-transform: scale(1.2);
+        /* Opera */
+
+        -moz-transform: scale(1.2);
+        /* Firefox */
+    }
+}
+
+
+
+
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #595959;
+   
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all 0.5s;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+
+/*menu hover effect */
+nav ul li a {
+    position: relative;
+    z-index: 1;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+nav ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: ".";
+    color: transparent;
+    background: #4d664d;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+nav ul li a:hover:after  , .current_page_item {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+   
+}
+
+
+    
+.slider [data-animation-in] {
+    opacity: 0;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    transition: opacity 0.5s ease 0.3s;
+}
+
+
+/* /////////// IMAGE ZOOM /////////// */
+@-webkit-keyframes zoomInImage {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+@keyframes zoomInImage {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+.zoomInImage {
+    -webkit-animation-name: zoomInImage;
+    animation-name: zoomInImage;
+}
+
+@-webkit-keyframes zoomOutImage {
+    from {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes zoomOutImage {
+    from {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.zoomOutImage {
+    -webkit-animation-name: zoomOutImage;
+    animation-name: zoomOutImage;
+}
+
+.loc-img {
+    min-width: 100px;
+    margin-right: 15px;
+    min-height: 41px;
+}
+
+.loc-content {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
